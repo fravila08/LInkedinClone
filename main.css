@@ -2,20 +2,29 @@ body{
     background-color: whitesmoke;
     margin: 0;
 }
+
+nav{
+    height: 7vmax;
+}
+
 .upperBar{
+    height: 7vmax;
     background-color: white;
     display: flex;
     justify-content: space-around;
 }
+.upperBar p{
+    margin: 9px;
+}
 .leftSide{
     position: relative;
-    top: 15px;
+    top: 8px;
 }
 .rightSide{
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 .iconSize{
     height: 30px;
@@ -58,42 +67,166 @@ main{
 }
 
 .bodyLeftSide{
-    background-color: green;
+    
 }
 
 .leftUpper{
-    border: solid 5px red;
-    border-radius: 10px;
+    background-color: white;
+    border: solid 5px whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 20vmax;
     position: relative;
-    display:block;
-    flex-wrap: wrap;
+    font-size: 12px;
+    border-radius: 5px;
 }
 
-.background{
-    z-index: 1;
-    height: 150px;
-    width: 200px;
+.backgroundPic{
+    width: 20vmax;
     position: relative;
-    flex: 1;
+    z-index: 0;
+    border-bottom: solid 2px white;
+    border-radius: 15px 15px 0 0;
 }
 
 .morty{
-    z-index: 3;
-    height: 50px;
-    width: 50px;
-    border: 2px solid black;
-    border-radius: 25px;
-    position:absolute;
-    left: 70px;
-    top: 100px;
-
+    width: 5vmax;
+    height: 5vmax;
+    border: 2px solid white ;
+    border-radius: 5vmax;
+    position: absolute;
+    top: 10vmax;
+    left: 7vmax;
+    z-index: 2;
 }
+
 
 .mortyDetails{
-    z-index: 2;
-    background-color: white;
-    width: 200px;
-    position: relative;
-    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vmax;
+    text-align: center;
+    border-bottom:solid whitesmoke 2px;
+}
+.mortyDetails p{
+    font-size: 12px;
 }
 
+p{
+    margin: 0;
+}
+.notifications{
+    border-bottom: solid whitesmoke 2px;
+}
+.indivNoti{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vmin;
+    font-size: 10px;
+}
+
+.prem{
+    padding-left: 1vmin;
+    border-bottom: solid whitesmoke 2px;
+}
+
+#premium{
+    height: 10px;
+    width: 10px;
+}
+
+.items{
+    border-bottom: 0px transparent whitesmoke;
+    border-radius: 0 0 15px 15px;
+    padding-left: 1vmin;
+}
+#myItems{
+    height: 10px;
+}
+
+.leftLower{
+    background-color: white;
+    display: block;
+    font-size: 12px;
+    border: solid 3px whitesmoke;
+    border-radius: 15px;
+}
+
+.plus{
+    height: 8px;
+    margin-right: 5px;
+
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    border-bottom: whitesmoke solid 2px;
+}
+
+.events{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discoverMore{
+    text-align: center;
+    color: gray;
+}
+/*  */
+/*  */
+/*  */
+.bodyCenter{
+    border: 5px solid black;
+}
+#morty{
+    width: 5vmax;
+    height: 5vmax;
+    border: 2px solid white ;
+    border-radius: 5vmax;
+}
+
+.status{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1vmax;
+    padding-top: 2vmin;
+}
+#status{
+    background-color: white;
+    border: black 3px transparent;
+    border-radius: 2vmin;
+}
+.post{
+    border:transparent 2px white ;
+    border-radius: 15px;
+    margin-top: auto;
+    width: 45vmax;
+    height: 6vmin;
+}
+
+.icons{
+    padding-left:4vmin;
+    display: inline;
+}
+
+#pic{
+    height: 4vmin;
+    
+}
+
+#icon{
+    padding: 1vmin 0 1vmin 0;
+}
+
+.guestPost{
+    border: 1vmin solid white;
+    background-color: white;
+    width: 59vmax;
+    height: 50vmax;
+    margin: 2vmin 0;
+    border-radius: 15px;
+}
