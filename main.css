@@ -178,7 +178,7 @@ p{
 /*  */
 /*  */
 .bodyCenter{
-    border: 5px solid black;
+    border: 5px transparent black;
 }
 #morty{
     width: 5vmax;
@@ -226,7 +226,38 @@ p{
     border: 1vmin solid white;
     background-color: white;
     width: 59vmax;
-    height: 50vmax;
+    height: fit-content;
     margin: 2vmin 0;
     border-radius: 15px;
+    width: fit-content;
+}
+
+.guest{
+    display: flex;
+    align-items: center;
+}
+
+.guestPost hr{
+    margin-top: 2vmax;
+}
+
+#rick{
+    height: 3vmax;
+    width: 3vmax;
+    border: 1px white solid;
+    border-radius: 5vmax;
+    margin-right: 2vmin;
+    margin-left: 1vmin;
+}
+
+.lowBar{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1vmax;
+}
+
+.lowBar img{
+    height: 3vmin;
+    margin-right: 1vmin;
+    
 }
