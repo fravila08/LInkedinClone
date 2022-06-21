@@ -1,14 +1,24 @@
 body{
     background-color: whitesmoke;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    height: 9.5vh;
+    width: 100vw;
+    background-color: white;
 }
 
 nav{
-    height: 7vmax;
+    height: 9.5vh;
+    width: 100vw;
 }
 
 .upperBar{
-    height: 7vmax;
+    height: 7vh;
+    width: 100vw;
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -27,8 +37,8 @@ nav{
     top: 5px;
 }
 .iconSize{
-    height: 30px;
-    width: 30px;
+    height: 4vh;
+    width: 2vw;
     padding-left: 8px;
 }
 
@@ -64,40 +74,52 @@ hr{
 main{
     display: flex;
     justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 4vh;
 }
+
+
+
+/*  */
+/*  */
+/*  */
 
 .bodyLeftSide{
-    
+    width: 20vw;
 }
-
 .leftUpper{
     background-color: white;
     border: solid 5px whitesmoke;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 20vmax;
+    width: 20vw;
     position: relative;
     font-size: 12px;
     border-radius: 5px;
 }
 
 .backgroundPic{
-    width: 20vmax;
+    width: 100%;
     position: relative;
     z-index: 0;
     border-bottom: solid 2px white;
     border-radius: 15px 15px 0 0;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 .morty{
-    width: 5vmax;
-    height: 5vmax;
+    width: 5vw;
+    height: auto;
     border: 2px solid white ;
-    border-radius: 5vmax;
-    position: absolute;
-    top: 10vmax;
-    left: 7vmax;
+    border-radius: 5vw;
+    position: relative;
+    bottom: 3vh;
     z-index: 2;
 }
 
@@ -105,7 +127,7 @@ main{
 .mortyDetails{
     display: flex;
     flex-direction: column;
-    margin-top: 1vmax;
+    margin-top: 1vh;
     text-align: center;
     border-bottom:solid whitesmoke 2px;
 }
@@ -122,12 +144,12 @@ p{
 .indivNoti{
     display: flex;
     justify-content: space-between;
-    margin: 0 1vmin;
+    margin: 0 1vh;
     font-size: 10px;
 }
 
 .prem{
-    padding-left: 1vmin;
+    padding-left: 1vh;
     border-bottom: solid whitesmoke 2px;
 }
 
@@ -139,7 +161,7 @@ p{
 .items{
     border-bottom: 0px transparent whitesmoke;
     border-radius: 0 0 15px 15px;
-    padding-left: 1vmin;
+    padding-left: 1vh;
 }
 #myItems{
     height: 10px;
@@ -151,6 +173,7 @@ p{
     font-size: 12px;
     border: solid 3px whitesmoke;
     border-radius: 15px;
+    width: 20vw;
 }
 
 .plus{
@@ -174,62 +197,70 @@ p{
     text-align: center;
     color: gray;
 }
+
 /*  */
 /*  */
 /*  */
+
 .bodyCenter{
     border: 5px transparent black;
+    width: 50vw;
 }
 #morty{
-    width: 5vmax;
-    height: 5vmax;
+    width: 5vh;
+    height: 5vh;
     border: 2px solid white ;
-    border-radius: 5vmax;
+    border-radius: 5vh;
 }
 
 .status{
-    width: max-content;
+    width: 100%;
     display: flex;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    margin-bottom: 3%;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 1vmax;
-    padding-top: 2vmin;
 }
 #status{
     background-color: white;
-    border: black 3px transparent;
-    border-radius: 2vmin;
+    border-radius: 2vh;
+    width: 100%;
+    height: 20vh;
 }
 .post{
     border:transparent 2px white ;
     border-radius: 15px;
-    margin-top: auto;
-    width: 45vmax;
-    height: 6vmin;
+    margin-top: 3vh;
+    width: 80%;
+    height: 5vh;
 }
 
 .icons{
-    padding-left:4vmin;
     display: inline;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
 }
 
 #pic{
-    height: 4vmin;
+    height: 40%;
     
 }
 
 #icon{
-    padding: 1vmin 0 1vmin 0;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-left: 2%;
 }
 
 .guestPost{
-    border: 1vmin solid white;
+    border: 1vh solid white;
     background-color: white;
-    width: 59vmax;
-    height: fit-content;
-    margin: 2vmin 0;
+    width: 100%;
+    height: auto;
+    margin: 2vh 0;
     border-radius: 15px;
-    width: fit-content;
 }
 
 .guest{
@@ -238,26 +269,96 @@ p{
 }
 
 .guestPost hr{
-    margin-top: 2vmax;
+    margin-top: 2vh;
 }
 
 #rick{
-    height: 3vmax;
-    width: 3vmax;
+    height: 3vh;
+    width: 3vh;
     border: 1px white solid;
-    border-radius: 5vmax;
-    margin-right: 2vmin;
-    margin-left: 1vmin;
+    border-radius: 5vh;
+    margin-right: 2vh;
+    margin-left: 1vh;
 }
 
 .lowBar{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1vmax;
+    margin-bottom: 1vh;
 }
 
 .lowBar img{
-    height: 3vmin;
-    margin-right: 1vmin;
+    height: 3vh;
+    margin-right: 1vh;
     
+}
+
+/*  */
+/*  */
+/*  */
+
+.upperRight{
+    width: 100%;
+    height: auto;
+    border-radius:5%;
+    background-color: white;
+    margin-bottom: 3vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+.i{
+    background-color: black;
+    color: white;
+    height: min-content;
+    width: 3%;
+    padding: 0.7vh;
+    padding-left: 0.5vw;
+    margin-top: 2.5vh;
+}
+
+ul{
+    margin: 0;
+    
+}
+
+ul li{
+    height:auto;
+    font-size: 1em;
+    margin-bottom: 2vh;
+}
+
+li p{
+    font-size: 10px;
+}
+
+li:hover, .seeMore:hover{
+    background-color: gray;
+}
+
+.seeMore{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+
+/*  */
+/*  */
+/*  */
+
+
+.bodyRightSide{
+    width: 20vw;
+}
+
+
+
+
+@media only screen and (max-width: 856px) {
+    #status{
+        font-size: .6em;
+    }
 }
